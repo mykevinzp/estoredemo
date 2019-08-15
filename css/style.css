@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display&display=swap');
+
+*, *::before, *::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Gilda Display', serif;
+font-size: 1em;
+line-height: 1.5em;
+width: 100%;
+height: 100%;
+font-weight: lighter;
+}
+
+.nav{
+z-index: 1;
+position: fixed;
+width: 100%;
+height: 60px;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.nav.scrolled{
+background-color: #fff !important;
+transition: background-color 300ms linear;
+}
+
+.menu-open{
+position: absolute;
+line-height: 60px;
+left: 1.4em;
+cursor: pointer;
+}
+
+.brand span a{
+position: absolute;
+line-height: 60px;
+left: 50%;
+transform: translateX(-50%);
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 5px;
+}
+
+.brand a:hover{
+text-decoration: none;
+}
+
+.contact-open{
+position: absolute;
+line-height: 60px;
+right: 1.4em;
+font-weight: 300;
+cursor: pointer;
+}
+
+.contact{
+position: fixed;
+z-index: 2;
+width: 30%;
+right: -60%;
+height: 100vh;
+background:  #e5f0b3;
+border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+.form-menu{
+text-align: center;
+margin-top: 25vh;
+}
+
+.contact-close{
+position: relative;
+line-height: 60px;
+float: right;
+margin-right: 20px;
+}
+
+.menu{
+position: fixed;
+z-index: 2;
+width: 30%;
+left: -30%;
+height: 100vh;
+background: #fff;
+border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+
+@media(max-width: 992px){
+
+.contact{
+width: 30%;
+right: -200%;
+}
+
+}
+
+
+@media(max-width: 768px){
+.menu {
+width: 100%;
+left: -200%;
+}
+
+.contact{
+width: 100%;
+right: -200%;
+}
+}
+
+.menu-close{
+position: relative;
+line-height: 60px;
+margin-left: 20px;
+}
+
+.menu ul{
+list-style: none;
+position: relative;
+top: 40%;
+left: 10%;
+transform: translate(0%, -50%);
+}
+
+.menu ul li{
+padding-bottom: 20px !important;
+}
+
+.menu ul li a{
+font-size: 12px;
+}
+
+.menu ul li a:hover{
+text-decoration: none;
+}
+
+.media-menu{
+position: relative;
+top: 50%;
+}
+
+.media-menu ul li{
+display: inline-block;
+padding-right: 10px;
+}
+
+
+.hero-section{
+height: 100vh;
+border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.frnt-image{
+display: none;
+}
+
+.hero-left{
+height: 100vh;
+background: #e5f0b3;
+z-index: -1;
+}
+
+.tagline{
+position: absolute;
+margin-top: 50px;
+margin-left: 40px;
+font-size: 22px;
+font-weight: 300px;
+}
+
+.hide-sm img {
+    width: 500px;
+}
+
+a{
+color: grey !important;
+font-size: 10px;
+text-transform: capitalize;
+letter-spacing: 2px;
+}
+
+.shipping{
+position: absolute;
+bottom: 10px;
+margin-left: 40px;
+font-size: 15px;
+font-weight: 300;
+}
+
+.hero-image{
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+img{
+width: 100%;
+}
+
+.media{
+position: absolute;
+right: 0;
+bottom: 20px;
+margin-right: 20px;
+}
+
+.media ul{
+list-style: none;
+}
+
+.media ul li{
+display: inline-block;
+margin-right: 20px;
+}
+
+@media(max-width: 992px) {
+.hero-image{
+display: none;
+}
+
+.frnt-image{
+display: block;
+position: absolute;
+top:65%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.hide-sm{
+    display: none;
+}
+
+.frnt-image img{
+    width: 400px;
+}
+
+.media{
+margin-right: 40%;
+}
+
+}
+
+@media(max-width: 768px){
+    
+.media{
+    margin-right: 27%;
+    }
+}
+
+.section{
+padding: 80px 40px;
+}
+
+.section p{
+font-family: 'Gilda Display', serif;
+font-weight: 300;
+}
+
+.prod {
+margin-top: 20px;
+}
+
+.prod:hover a{
+text-decoration: none;
+}
+
+#prod-desc{
+margin-top: 16px;
+font-size: 14px;
+font-weight: 300;
+}
+
+.prod-sec{
+width: 100%;
+background: #e5f0b3;
+border-top: 2px solid rgba(0,0,0,0.1);
+border-bottom: 2px solid rgba(0,0,0,0.1);
+border-left: 2px solid rgba(0,0,0,0.1);
+border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.prod-sec p{
+font-size: 24px;
+font-weight: 300;
+}
+
+
+@media(max-width: 992px) {
+.prod-sec{
+padding-left: 30px;
+width: 100%;
+border: none;
+}
+
+.prod-sec a{
+display: none;
+}
+}
+
+#price{
+font-size: 20px;
+font-weight: 300;
+text-transform: uppercase;
+}
+
+.footer{
+padding: 30px 0;
+background: #fae9a4;
+}
+
+.block{
+margin-top: 40px;
+}
+
+.footer .media{
+top: 20px !important;
+}
+
+footer p{
+text-align: center;
+font-family: 'Gilda Display', serif !important;
+font-size: 14px !important;
+}
+
+.whitespaces{
+height: 100px;
+}
+
+
+.product-sec{
+border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.product-sec{
+border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+@media(max-width: 992px) {
+.product-sec {
+margin-bottom: 100px;
+border-bottom: none !important;
+}
+.prod-left{
+border-right:none;
+}
+
+}
+
+.prod-left{
+border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-prod {
+margin: 50px 0;
+}
+
+.add-prod a {
+padding: 20px 40px;
+background: #222;
+color: #fff !important;
+font-weight: 300;
+letter-spacing: 4px;
+text-decoration: none;
+}
+
+.hero{
+height: 400px;
+background: #f7f6b2;
+position: relative;
+}
+
+#hero-title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
+}
+
+.content {
+margin: 50px 0;
+width: 65% !important;
+}
+
+@media(max-width: 992px) {
+.content {
+width: 90% !important;
+}
+}
+
+.content p{
+font-weight: 300;
+color: rgba(0,0,0,0.6)
+}
+
+#blockquote {
+font-style: italic;
+font-size: 24px;
+padding: 30px 20px;
+margin: 20px 0;
+border: 1px solid rgba(0,0,0,0.1);
+}
